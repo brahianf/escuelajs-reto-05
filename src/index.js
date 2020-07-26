@@ -34,6 +34,7 @@ const loadData = async () => {
   newItem.classList.add('Items');
   newItem.innerHTML = output;
   $app.appendChild(newItem);
+  localStorage.clear();
 }
 
 const intersectionObserver = new IntersectionObserver(entries => {
